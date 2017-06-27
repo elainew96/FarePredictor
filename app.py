@@ -1,6 +1,2 @@
-from flask import Flask
-app = Flask(__name__)
-
-@app.route("/") #function decorator, acts as server
-def hello():
-	return "Hello World!"
+from tensorflow.examples.tutorials.mnist import input_data
+mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
